@@ -538,6 +538,7 @@ body {
   }
   .ya-pageheader .ya-tagline, .ya-pageheader .ya-logo {
     padding: 10px 20px;
+    text-align: center;
   }
   .ya-pageheader h2 {
     margin: 0;

@@ -42,14 +42,6 @@ scss file for school profile
   margin-left: 0;
 }
 
-.ya-school-registration {
-  padding: 30px;
-}
-@media (max-width: 767px) {
-  .ya-school-registration {
-    padding: 30px 15px;
-  }
-}
 .ya-school-registration h1 {
   font: 36px "ProximaNova-Regular";
 }
@@ -655,7 +647,8 @@ span[data-icon] {
   margin: 0 2px 0 0;
 }
 .school-registration-3 .ya-faculty-section .ya-faculty-block .ya-button-row .btn {
-  width: 150px;
+  width: auto;
+  min-width: 150px;
 }
 .school-registration-3 .ya-faculty-section .ya-add-faculty-panel .ya-faculty-form {
   width: 100%;

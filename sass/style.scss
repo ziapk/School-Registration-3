@@ -222,6 +222,7 @@ body{
 	padding-top:0;
 	.ya-tagline{
 		padding: $basePadding / 2 $basePadding;
+		text-align:center;
 	}
 	.ya-logo{
 		@extend .ya-tagline;

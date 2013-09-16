@@ -75,10 +75,6 @@ $icon_font_size: 20px;
 }
 
 .ya-school-registration {
-    padding: $margin_padding * 2;
-	@media (max-width: 767px) {
-		padding: $margin_padding * 2 $margin_padding;
-	}
 	h1 {
 		font: $PageHeading;
 		@media (max-width: 460px) {
@@ -291,7 +287,11 @@ span[data-icon] {
     .btn-link{}
     .ya-seperator{border-left: 1px solid $grey; margin:0 2px 0 0;}
     }
-    .ya-button-row{ .btn{@include input-medium();}}
+    .ya-button-row{ 
+	.btn{ 
+		width:auto;
+		min-width:150px;
+	}}
 
   }
   .ya-add-faculty-panel{

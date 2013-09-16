@@ -15,7 +15,7 @@ div.multi-step ol > li {
 	list-style:none;				/* the default list numbers are not really usefull when the LIs are floated */
 	margin:0;
 	padding:0;
-	height: 50px;
+	min-height: 50px;
 }
 div.multi-step ol > li:last-child .bg {
 	border-radius:0 8px 8px 0;		/* we need to round those corners, otherwise the background will show over the rounded border */
@@ -141,5 +141,18 @@ div.multi-step.five-steps ol > li .bg {
 	div.multi-step ol > li .num {
 		border-width:0;
 		top:6px;
+	}
+}
+@media (max-width : 979px){
+	div.multi-step.numbered ol > li .wrap{
+		padding-left:23%;
+	}
+	div.multi-step.numbered ol > li .num{
+		z-index:999;
+	}
+}
+@media (max-width : 767px){
+	.btn{
+		margin:5px !important;
 	}
 }

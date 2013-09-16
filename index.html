@@ -36,20 +36,7 @@
     <![endif]-->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.82095.js"></script>
-    <!--[if lte IE 8]>
-    <script type="text/javascript">
-		$(function(){
-			if( !($('html').hasClass('boxsizing')) ){
-				$('.ya-widget, .ya-widget *').each(function(){
-					var fullW = $(this).outerWidth(),
-						actualW = $(this).width(),
-						wDiff = fullW - actualW,
-						newW = actualW - wDiff;
-					$(this).css('width',newW);
-				});
-			}
-		});
-	</script>
+    <!--[if lte IE 7]>
     <script type="text/javascript" src="js/lte-ie7.js"></script>
     <![endif]-->
 	<script src="js/school-registration-1.js"></script>

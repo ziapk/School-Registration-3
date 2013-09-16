@@ -383,6 +383,7 @@ table.table .ya-total {
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 10px 5px;
 }
 
 .btn-large {
@@ -787,14 +788,6 @@ span[data-icon="E"], span[data-icon="C"] {
 
 .ya-i-teach label.checkbox {
   margin: 6px 0 6px 6px;
-}
-
-.container-fluid {
-  background-color: white;
-  max-width: 1170px;
-  margin: 0 auto;
-  border-radius: 6px;
-  border: 1px solid #4e453e;
 }
 
 span[data-icon] {
