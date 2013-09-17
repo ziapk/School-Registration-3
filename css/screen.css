@@ -193,13 +193,23 @@ blockquote p {
 .alert span {
   float: right;
   font-size: 20px;
-  position: relative;
-  right: -35px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 23px;
 }
 
 .alert-error {
   background-color: #ffebe8;
   border: 1px solid #b4341d;
+}
+.alert-error .close {
+  position: absolute;
+  color: #b4341d;
+  right: 5px;
+  left: auto;
+  top: 50%;
+  margin-top: -12px;
 }
 
 .alert-info {

@@ -196,7 +196,9 @@ body{
 }
 .#{$forBoxSizing} {
 }
-
+textarea{
+	max-width:100%;
+}
 @media (max-width: 979px) { 
 .#{$pageHeader}{
 	padding-top:25px;

@@ -229,13 +229,24 @@ blockquote p {
 .alert span {
 	float: right;
 	font-size: fontCalc(20);
-	position: relative;
-	right: -$default-margin*3.5;
+	position: absolute;
+	height:20px;
+	width:20px;
+	right: 23px;
 }
 .alert-error {
 	background-color: $light-red;
 	border: 1px solid $red;
+	.close{
+		position:absolute;
+		color: $red;
+		right:5px;
+		left: auto;
+		top:50%;
+		margin-top:-12px;
+	}
 }
+
 .alert-info {
 	background-color: $light-blue;
 	border: 1px solid $blue;

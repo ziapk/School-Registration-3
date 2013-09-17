@@ -513,6 +513,10 @@ body {
   content: '';
 }
 
+textarea {
+  max-width: 100%;
+}
+
 @media (max-width: 979px) {
   .ya-pageheader {
     padding-top: 25px;
