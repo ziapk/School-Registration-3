@@ -321,7 +321,8 @@
                                             <div class="span6">
                                                 <ul>
                                                     <li><label class="checkbox">
-                                                          <input type="checkbox"> Owner
+                                                          <input type="checkbox" id="owner"> Owner
+                                                          <button href="#myModal" data-toggle="modal" class="btn hidden" >Button</button>
                                                         </label>
                                                     </li>
                                                     <li><label class="checkbox">
@@ -360,7 +361,7 @@
                                             </div>									
                                         </div>
                                         <div class="ya-button-row clearfix row-fluid">
-                                            <button href="#myModal" data-toggle="modal" class="btn input-small">Add</button>
+                                            <button class="btn input-small">Add</button>
                                             <button class="btn input-small">Cancel</button>
                                         </div>
                                     </div>		
@@ -370,8 +371,8 @@
                                             <h3>Important - Adding an Owner!</h3>
                                             <p>If you mark someone else as an owner you are asserting that they have full legal authority to do anything to this record, including removing you as an owner. </p>
                                             <div class="ya-button-row clearfix">
-                                                <a class="btn" href="#">Accept</a>
-                                                <button aria-hidden="true" data-dismiss="modal" class="btn" type="button">Cancel</button>
+                                                <a aria-hidden="true" data-dismiss="modal" class="btn" href="#">Accept</a>
+                                                <button aria-hidden="true" data-dismiss="modal" class="btn uncheck-btn" type="button">Cancel</button>
                                             </div>
                                           </div>
                                          
@@ -391,7 +392,7 @@
                         </div>
                         <div id="id-school-trainers" class="ya-section-content collapse ">
                             <p class="row-fluid">
-                                <span class="help-inline pull-right"><span data-icon="P" aria-hidden="true" class="ya-tick"></span> Designates Lead Trainer (Maximun 2) <span data-icon="T" aria-hidden="true" class="ya-help-icon"></span></span>
+                                <span class="help-inline pull-right"><span data-icon="P" aria-hidden="true" class="ya-tick"></span> Designates Lead Trainer <span class="hide-for-clause">(Maximun 2)</span> <span data-icon="T" aria-hidden="true" class="ya-help-icon"></span></span>
                             </p>
                             <div class="ya-additional-panel">
                                 <div class="ya-additional-panel-wrraper ya-rate-structure-panel">
@@ -498,23 +499,27 @@
                                     
                                     <div class="ya-button-row clearfix">
                                         <button data-target="#id-add-trainer-panel" data-toggle="collapse" class="btn">Add Trainer</button>
-                                        <button  class="btn btn-success">Continue</button>
+                                        <button  class="btn btn-success continue-btn show-invoke-clause" id="">Continue</button>
                                     </div>
                                     <div class="ya-widget visible-desktop visible-tablet">
                                     	<form class="form-inline">
                                     	
-                                        <p><label class="checkbox"><input type="checkbox"> &nbsp;&nbsp; Invoke Consistency Clause</label>
+                                        <p><label class="checkbox"><input type="checkbox" id="invoke-clause"> &nbsp;&nbsp; Invoke Consistency Clause</label>
                                         <span class="ya-help-icon" aria-hidden="true" data-icon="T"></span></p>
-                                        <label>Explain how you maintain consistency of instruction</label>
-                                        <textarea class="input-block-level" rows="5"></textarea>
-                                        <div class="ya-button-row clearfix">
-                                            <button class="btn btn-success">Save</button>
-                                            <button class="btn">Cancel</button>
+                                        <div class="hidden show-on-clause">
+    	                                    <label>Explain how you maintain consistency of instruction</label>
+	                                        <textarea class="input-block-level clause-description" rows="5"></textarea>
+                                            <div class="ya-button-row clearfix">
+                                                <button class="btn btn-success show-clause-description">Save</button>
+                                                <button class="btn cancel-memo">Cancel</button>
+                                            </div>
                                         </div>
                                         <!-- SHOW THESE AFTER USER CLICKS SAVE -->
-                                        	<p><em><strong>Show the first line fo the text that the ...</strong></em></p>
-                                            <div class="ya-button-row clearfix">
-                                                <a href="#" class="ya-action">Edit</a>
+											<div class="for-clause-description hidden">
+                                                <div class="ya-button-row clearfix">
+                                                	<p class="live-desc"></p>
+                                                    <a href="#" class="ya-action for-show-clause-description ">Edit</a>
+                                                </div>
                                             </div>
                                         <!-- END SHOW -->
                                         </form>
@@ -614,7 +619,7 @@
                                 </div>
                                 <div class="ya-button-row clearfix">
                                         <button class="btn" data-toggle="collapse" data-target="#id-add-faculty-panel">Add Other Faculty</button>
-                                        <button class="btn btn-success">Cancel</button>
+                                        <button class="btn btn-success continue-btn">Continue</button>
                                 </div>
                             </div>
                             <div class="ya-additional-panel collapse " id="id-add-faculty-panel">
